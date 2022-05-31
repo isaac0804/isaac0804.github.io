@@ -1,0 +1,90 @@
+baseURL: "https://isaac0804.github.io/"
+languageCode: 'en-us'
+title: Deep Dive
+theme: PaperMod
+
+params: 
+  env: production
+  title: Deep Dive
+  description: Learning
+  author: Isaac Yong
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  cover:
+    linkFullImages: true
+
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
+
+  homeInfoParams:
+    Title: Hi There 🎹
+    Content: Welcome to my website
+  
+  socialIcons:
+    - name: "Github"
+      url: "http://github.com/isaac0804"
+    - name: "Twitter"
+      url: "http://twitter.com/IsaacYong13"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: posts/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: tags/
+      weight: 30
+    - identifier: projects
+      name: Projects
+      url: projects/
+      weight: 40
+    - identifier: search
+      name: Search
+      url: search/
+      weight: 50
+    - identifier: about
+      name: About Me
+      url: about/
+      weight: 60
+    
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
