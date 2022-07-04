@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Deep Dive</title>
+    <link>https://isaac0804.github.io/</link>
+    <description>Recent content on Deep Dive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://isaac0804.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathematical Competitions in Malaysia</title>
+      <link>https://isaac0804.github.io/posts/2021-02-01-mo-competitions/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2021-02-01-mo-competitions/</guid>
+      <description>MC-based Competitions MC stands for Multiple Choice. This is a pretty straight forward format because it is just like examinations in school but with slightly advance topics.
+ KMC (Kangaroo Math Competition) IMONST 1 (International Mathematical Olympiad National Selection Test)  organized by Committee under Ministry of Education of Malaysia, that is why this test is different to many other competitions organized by other for-profit organizations. aims to select students to represent Malaysia to compete in competitions,, e.</description>
+    </item>
+    
+    <item>
+      <title>Gifted or Cursed?</title>
+      <link>https://isaac0804.github.io/posts/2021-11-26-gifted-or-cursed/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2021-11-26-gifted-or-cursed/</guid>
+      <description>Status: Under Construction
+This is a summary of a video I watched few days ago, which made me ponder for a while.
+ Background When I was in Primary 2, I took my mom&amp;rsquo;s textbook and started doing Additional Mathematics out of curiosity. I really enjoyed it and part of the reason is that I could get praised by my parents. I was happy and cosidered myself as a clever kid.</description>
+    </item>
+    
+    <item>
+      <title>Innovation Competitions Tips and Tricks</title>
+      <link>https://isaac0804.github.io/posts/2021-11-02-innovation-competitions-tips-and-tricks/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2021-11-02-innovation-competitions-tips-and-tricks/</guid>
+      <description>Some of my thoughts when watching MyGeekathon Final 2021.
+1. NEVER say no enough time For the sake of your marks, do not say you dont have enough time. All the contestants have the same amount of time and it is sufficient to build a good enough prototype / product. This line just exposed the poor time management of your team to the judges.
+2. Understand clearly the judging criteria for the competition Knowing the judging criteria can come in handy when you are deciding what information should be included in the presentation.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://isaac0804.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://isaac0804.github.io/about/</guid>
+      <description>About Me</description>
+    </item>
+    
+    
+    <item>
+      <title>Projects</title>
+      <link>https://isaac0804.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://isaac0804.github.io/projects/</guid>
+      <description>These are some of the projects I worked on during my free time. Questions or collaborations are welcome.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
