@@ -35,6 +35,7 @@ params:
   homeInfoParams:
     Title: Hi There 🎹
     Content: Welcome to my website
+    images: static\images\Snub_a_beam_of_pure_white_light_par_2.png
   
   socialIcons:
     - name: "Github"
