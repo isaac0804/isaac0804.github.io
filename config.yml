@@ -23,6 +23,7 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  math: true
 
   cover:
     linkFullImages: true

@@ -5,6 +5,10 @@ description: "These are some of the projects I worked on during my free time. Qu
 summary: "Projects"
 ---
 
+## Status
+
+I am currently working on a project called Ling Ling v2.0. It is a piano music generative model. Stay tune.
+
 ## Coconut SLAM
 
 Simultaneous Localization and Mapping (SLAM) implementation using C++ and OpenCV
