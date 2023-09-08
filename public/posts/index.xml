@@ -6,7 +6,46 @@
     <description>Recent content in Posts on Deep Dive</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://isaac0804.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Aug 2022 14:37:05 +0800</lastBuildDate><atom:link href="https://isaac0804.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MidiBERT-Piano Paper</title>
+      <link>https://isaac0804.github.io/posts/2022-08-23-midibert-piano-paper/</link>
+      <pubDate>Tue, 23 Aug 2022 14:37:05 +0800</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2022-08-23-midibert-piano-paper/</guid>
+      <description>MidiBERT-Piano Contributions Compound word(CP) encoding is better than REMI encoding in general BERT-based model outperforms RNN-based model in following downstream tasks: Melody extraction Velocity Prediction Composer Identification Emotion classfication Pretraining perform much better than the model that train from scratch. Future work Implement other pretraining method to further boost the performance and robustness. Personally, I think the recent GLM paper is worth trying. </description>
+    </item>
+    
+    <item>
+      <title>AI Music Series</title>
+      <link>https://isaac0804.github.io/posts/2022-08-21-ai-music-series/</link>
+      <pubDate>Sun, 21 Aug 2022 15:19:48 +0800</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2022-08-21-ai-music-series/</guid>
+      <description>Music Generative Model This is a project I&amp;rsquo;ve been thinking about for a while and now I decided to start working on it. The aim is to generate piano music using a generative model. The reason why I decided to limit the scope of the project to piano music is that I play piano and I understand piano more than other instruments.
+In addition, piano is a wide pitch range and polyphonic instrument so it can imitate most of the instruments.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Perceiver Note</title>
+      <link>https://isaac0804.github.io/posts/2022-08-21-hierarchical-perceiver-note/</link>
+      <pubDate>Sun, 21 Aug 2022 14:49:56 +0800</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2022-08-21-hierarchical-perceiver-note/</guid>
+      <description>Hierarchical Perceiver Problems Perception Models are able to process large inputs and largely focused on Global attention. Fourier embeddings must be adjust to fit the modality of data and become memory bottleneck when dealing with high dimensional data Novelties This paper shows that by introducing some degree of locality, it can improve the efficiency of perceiver model. Masked Auto-Encodign(MAE) plays a mojor role in learning positional embeddings Architecture Input data is assumed to be processed such that it is in a shape of M x C where M is number of tokens and C is number of channels</description>
+    </item>
+    
+    <item>
+      <title>MuZero Note</title>
+      <link>https://isaac0804.github.io/posts/2022-08-21-muzero/</link>
+      <pubDate>Sun, 21 Aug 2022 14:48:02 +0800</pubDate>
+      
+      <guid>https://isaac0804.github.io/posts/2022-08-21-muzero/</guid>
+      <description>Model architecture for single agent deterministic game which can trained without prior human knowledge about the rules and strategies..
+Main Contributions:
+Monte Carlo Tree Search (MCTS) Solve the exploitation vs exploration dilemma. The use of Representation, Prediction and Dynamic function Prediction functon $f$, predicts policy and value, $p_t$ and $v_t$ Dynamic function $g$, given the current state and action taken, $s_t$ and $a_{t+1}$ predicts the next state and immediate reward, $s_{t+1}$ and $r_{t+1}$ Representation function $h$, convert current state to latent space, $s_t$ Cons:</description>
+    </item>
+    
     <item>
       <title>Mathematical Competitions in Malaysia</title>
       <link>https://isaac0804.github.io/posts/2021-02-01-mo-competitions/</link>
@@ -14,7 +53,7 @@
       
       <guid>https://isaac0804.github.io/posts/2021-02-01-mo-competitions/</guid>
       <description>MC-based Competitions MC stands for Multiple Choice. This is a pretty straight forward format because it is just like examinations in school but with slightly advance topics.
- KMC (Kangaroo Math Competition) IMONST 1 (International Mathematical Olympiad National Selection Test)  organized by Committee under Ministry of Education of Malaysia, that is why this test is different to many other competitions organized by other for-profit organizations. aims to select students to represent Malaysia to compete in competitions,, e.</description>
+KMC (Kangaroo Math Competition) IMONST 1 (International Mathematical Olympiad National Selection Test) organized by Committee under Ministry of Education of Malaysia, that is why this test is different to many other competitions organized by other for-profit organizations. aims to select students to represent Malaysia to compete in competitions,, e.</description>
     </item>
     
     <item>
@@ -25,7 +64,7 @@
       <guid>https://isaac0804.github.io/posts/2021-11-26-gifted-or-cursed/</guid>
       <description>Status: Under Construction
 This is a summary of a video I watched few days ago, which made me ponder for a while.
- Background When I was in Primary 2, I took my mom&amp;rsquo;s textbook and started doing Additional Mathematics out of curiosity. I really enjoyed it and part of the reason is that I could get praised by my parents. I was happy and cosidered myself as a clever kid.</description>
+Background When I was in Primary 2, I took my mom&amp;rsquo;s textbook and started doing Additional Mathematics out of curiosity. I really enjoyed it and part of the reason is that I could get praised by my parents. I was happy and cosidered myself as a clever kid.</description>
     </item>
     
     <item>
