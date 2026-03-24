@@ -2,6 +2,8 @@
 title: "Gifted or Cursed?"
 date: 2021-11-26
 draft: false
+unlisted: true
+searchHidden: true
 
 tags: ["Education", "Math"]
 ---
