@@ -1,54 +1,84 @@
 ---
 title: "Projects"
-layout: "project" 
+layout: "project"
 description: "A selection of projects spanning robotics, education technology, machine learning, and software engineering."
 summary: "Projects"
+projectSections:
+  - title: "Current Focus"
+    intro: "The work I am spending the most time on right now."
+    items:
+      - title: "First Order Robotics"
+        stage: "Current"
+        role: "Software Lead"
+        summary: "I lead the software team for RoboCup Small Size League, working on systems that need to be reliable, fast, and practical under competition pressure."
+        stack:
+          - "C++"
+          - "robotics software"
+          - "simulation"
+          - "team tooling"
+        outcome: "Driving the software direction for the team and turning research and strategy ideas into software that can hold up in real matches."
+      - title: "SPM Chat"
+        stage: "Current"
+        role: "Builder"
+        summary: "A free chatbot for Malaysian students, built to make help more accessible and lower the barrier to getting quick academic support."
+        stack:
+          - "LLM application"
+          - "education technology"
+          - "chat UX"
+          - "product engineering"
+        outcome: "Created a student-facing tool with a clear social use case: making guidance easier to access without added cost."
+  - title: "Selected Projects"
+    intro: "A few earlier projects that still represent how I like to build."
+    items:
+      - title: "Coconut SLAM"
+        stage: "Project"
+        role: "Developer"
+        summary: "A Simultaneous Localization and Mapping implementation using C++ and OpenCV."
+        stack:
+          - "C++"
+          - "OpenCV"
+          - "SLAM"
+          - "computer vision"
+        outcome: "A hands-on systems project that sharpened my understanding of robotics and perception pipelines."
+        links:
+          - label: "Source Code"
+            url: "https://github.com/isaac0804/CoconutSLAM"
+      - title: "SunShine"
+        stage: "Project"
+        role: "Mobile developer"
+        summary: "A mobile app for NASA Space Apps Challenge that helps homeowners make better solar panel purchasing decisions."
+        stack:
+          - "Flutter"
+          - "Firebase"
+          - "mobile app"
+          - "climate tech"
+        outcome: "Turned a sustainability idea into a user-facing prototype with a practical decision-support angle."
+        links:
+          - label: "Source Code"
+            url: "https://github.com/ChangeMakerGroupEdition/Sunshine"
+      - title: "Hierarchical Perceiver"
+        stage: "Project"
+        role: "ML engineer"
+        summary: "An implementation of DeepMind's Hierarchical Perceiver paper in PyTorch."
+        stack:
+          - "PyTorch"
+          - "research implementation"
+          - "deep learning"
+          - "vision models"
+        outcome: "A paper implementation project that pushed me to understand model design at a deeper level than just reading the abstract."
+        links:
+          - label: "Source Code"
+            url: "https://github.com/isaac0804/HierarchicalPerceiver"
+      - title: "iRecycle"
+        stage: "Project"
+        role: "Product builder"
+        summary: "A mobile app aimed at encouraging more sustainable habits through a gamified recycling experience."
+        stack:
+          - "mobile app"
+          - "gamification"
+          - "sustainability"
+          - "product design"
+        outcome: "An attempt to connect software, incentives, and everyday behaviour in a way that could be genuinely useful."
 ---
 
-This page is a snapshot of the projects I am currently building and a few older ones that still matter to me.
-
-## Current work
-
-## First Order Robotics
-
-I am the Software Lead of First Order Robotics, where I lead the software team for RoboCup Small Size League. It is the kind of project that pushes me to think about reliability, speed, teamwork, and how software has to hold up under real competitive constraints.
-
-## SPM Chat
-
-SPM Chat is a free chatbot I built for Malaysian students. The goal is simple: make help more accessible, especially for students who need quick support without extra cost or friction.
-
-## Ling Ling v2.0 / PianoBERT
-
-This is my ongoing music generation project focused on piano. It started from my interest in symbolic music generation and has grown into a longer-term exploration of generative modelling, representation learning, and creative AI systems.
-
-[Source Code](https://github.com/isaac0804/Ling-Ling)
-
-## Selected projects
-
-## Coconut SLAM
-
-Simultaneous Localization and Mapping (SLAM) implementation using C++ and OpenCV.
-
-[Source Code](https://github.com/isaac0804/CoconutSLAM)
-
-## SunShine
-
-Mobile application developed using Flutter and Firebase for NASA Space Apps Challenge. The project helps homeowners make better solar panel purchasing decisions and encourages wider adoption of solar energy.
-
-[Source Code](https://github.com/ChangeMakerGroupEdition/Sunshine)
-
-## Genesis
-
-Simple toy game engine implemented using C++ and OpenGL.
-
-[Source Code](https://github.com/isaac0804/Genesis)
-
-## iRecycle
-
-Mobile application aimed at encouraging more sustainable habits through a gamified recycling experience.
-
-## Hierarchical Perceiver
-
-Implementation of [DeepMind's paper](https://arxiv.org/abs/2202.10890) in PyTorch.
-
-[Source Code](https://github.com/isaac0804/HierarchicalPerceiver)
+This page is a snapshot of the projects I am currently building and a few older ones that still represent how I think and work.

@@ -1,0 +1,220 @@
+{{- define "main" }}
+
+<article class="post-single project-page">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <style>
+    .project-section {
+      margin-top: 40px;
+    }
+
+    .project-section-intro {
+      color: var(--secondary);
+      margin-top: -8px;
+      margin-bottom: 20px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .project-card {
+      height: 100%;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--entry);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .project-card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .project-card-header h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .project-badge {
+      white-space: nowrap;
+      font-size: 12px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: var(--code-bg);
+    }
+
+    .project-summary {
+      margin: 0;
+      color: var(--content);
+    }
+
+    .project-details {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+    }
+
+    .project-details-row dt {
+      margin: 0 0 4px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+    }
+
+    .project-details-row dd {
+      margin: 0;
+      color: var(--content);
+    }
+
+    .project-stack {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .project-stack li {
+      margin: 0;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      color: var(--secondary);
+      font-size: 13px;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .project-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--code-bg);
+      box-shadow: none;
+    }
+
+    .project-links a:hover {
+      background: var(--border);
+    }
+  </style>
+
+  {{- range .Params.projectSections }}
+  <section class="project-section">
+    <h2>{{ .title }}</h2>
+    {{- with .intro }}
+    <p class="project-section-intro">{{ . }}</p>
+    {{- end }}
+    <div class="project-grid">
+      {{- range .items }}
+      <article class="project-card">
+        <div class="project-card-header">
+          <h3>{{ .title }}</h3>
+          {{- with .stage }}
+          <span class="project-badge">{{ . }}</span>
+          {{- end }}
+        </div>
+
+        {{- with .summary }}
+        <p class="project-summary">{{ . }}</p>
+        {{- end }}
+
+        <dl class="project-details">
+          {{- with .role }}
+          <div class="project-details-row">
+            <dt>Role</dt>
+            <dd>{{ . }}</dd>
+          </div>
+          {{- end }}
+          {{- with .stack }}
+          <div class="project-details-row">
+            <dt>Stack</dt>
+            <dd>
+              <ul class="project-stack">
+                {{- range . }}
+                <li>{{ . }}</li>
+                {{- end }}
+              </ul>
+            </dd>
+          </div>
+          {{- end }}
+          {{- with .outcome }}
+          <div class="project-details-row">
+            <dt>Outcome</dt>
+            <dd>{{ . }}</dd>
+          </div>
+          {{- end }}
+        </dl>
+
+        {{- with .links }}
+        <div class="project-links">
+          {{- range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+          {{- end }}
+        </div>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+</article>
+
+{{- end }}{{/* end main */}}

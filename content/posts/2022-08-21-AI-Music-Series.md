@@ -1,7 +1,7 @@
 ---
 title: "AI Music Series"
 date: 2022-08-21T15:19:48+08:00
-draft: false
+draft: true
 unlisted: true
 searchHidden: true
 ---

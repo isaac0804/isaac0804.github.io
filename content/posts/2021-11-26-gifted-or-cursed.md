@@ -1,7 +1,7 @@
 ---
 title: "Gifted or Cursed?"
 date: 2021-11-26
-draft: false
+draft: true
 unlisted: true
 searchHidden: true
 

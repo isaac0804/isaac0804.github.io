@@ -20,11 +20,15 @@ This website is my corner of the internet for sharing:
 - ideas I am still figuring out
 - occasional reflections on learning, robotics, and building things
 
-## Recent updates
+## What I am focused on now
 
-- Studying MEng Computing at Imperial College London, with a focus on Visual Computing and Robotics
-- Leading the software team at First Order Robotics for RoboCup SSL
-- Building products such as SPM Chat for students in Malaysia
+Updated April 2026.
+
+**Imperial College London** — Second year of the MEng Computing course, specialising in Visual Computing and Robotics. A lot of my current energy is going into building stronger fundamentals in the areas I want to work in long term.
+
+**First Order Robotics** — Software Lead for RoboCup Small Size League. Right now, that means thinking about software systems that need to be reliable in practice, not just interesting on paper.
+
+**SPM Chat and personal projects** — Still building tools like SPM Chat because I care about making useful software accessible. Alongside that, I am continuing to explore machine learning ideas through personal projects.
 
 ## What I am interested in
 
@@ -33,5 +37,11 @@ This website is my corner of the internet for sharing:
 - machine learning
 - developer tools
 - education technology
+
+## What I want more of
+
+- more writing about projects while they are still in progress
+- more public notes on robotics, ML, and systems work
+- more shipped things, even if they are small
 
 I want this site to become a more honest record of what I am working on, what I am learning, and what is still unfinished.

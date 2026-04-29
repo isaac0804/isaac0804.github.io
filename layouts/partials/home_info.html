@@ -6,6 +6,48 @@
         <p>I am a second-year MEng Computing student at Imperial College London, specialising in Visual Computing and Robotics. I currently lead software for First Order Robotics in the RoboCup Small Size League, and I built SPM Chat, a free chatbot for Malaysian students. This site is where I share projects, research notes, and recent updates on what I am building and learning.</p>
     </section>
     <footer class="entry-footer">
-        {{ partial "social_icons.html" $.Site.Params.socialIcons }}
+        <div class="home-social-buttons">
+            {{- range site.Params.socialIcons }}
+            <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" class="home-social-btn">
+                {{ partial "svg.html" . }}
+                <span>{{ .name }}</span>
+            </a>
+            {{- end }}
+        </div>
     </footer>
 </article>
+
+<style>
+    .home-social-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 4px;
+    }
+
+    .home-social-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--entry);
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        box-shadow: none;
+        transition: background 0.15s, border-color 0.15s;
+    }
+
+    .home-social-btn:hover {
+        background: var(--border);
+    }
+
+    .home-social-btn svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+</style>
