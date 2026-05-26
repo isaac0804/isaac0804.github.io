@@ -1,3 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Paper on Deep Dive</title><link>https://isaac0804.github.io/tags/paper/</link><description>Recent content in Paper on Deep Dive</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 23 Aug 2022 14:37:05 +0800</lastBuildDate><atom:link href="https://isaac0804.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml"/><item><title>MidiBERT-Piano Paper</title><link>https://isaac0804.github.io/posts/2022-08-23-midibert-piano-paper/</link><pubDate>Tue, 23 Aug 2022 14:37:05 +0800</pubDate><guid>https://isaac0804.github.io/posts/2022-08-23-midibert-piano-paper/</guid><description>MidiBERT-Piano Contributions Compound word(CP) encoding is better than REMI encoding in general BERT-based model outperforms RNN-based model in following downstream tasks: Melody extraction Velocity Prediction Composer Identification Emotion classfication Pretraining perform much better than the model that train from scratch. Future work Implement other pretraining method to further boost the performance and robustness. Personally, I think the recent GLM paper is worth trying.</description></item><item><title>Hierarchical Perceiver Note</title><link>https://isaac0804.github.io/posts/2022-08-21-hierarchical-perceiver-note/</link><pubDate>Sun, 21 Aug 2022 14:49:56 +0800</pubDate><guid>https://isaac0804.github.io/posts/2022-08-21-hierarchical-perceiver-note/</guid><description>Hierarchical Perceiver Problems Perception Models are able to process large inputs and largely focused on Global attention. Fourier embeddings must be adjust to fit the modality of data and become memory bottleneck when dealing with high dimensional data Novelties This paper shows that by introducing some degree of locality, it can improve the efficiency of perceiver model. Masked Auto-Encodign(MAE) plays a mojor role in learning positional embeddings Architecture Input data is assumed to be processed such that it is in a shape of M x C where M is number of tokens and C is number of channels</description></item><item><title>MuZero Note</title><link>https://isaac0804.github.io/posts/2022-08-21-muzero/</link><pubDate>Sun, 21 Aug 2022 14:48:02 +0800</pubDate><guid>https://isaac0804.github.io/posts/2022-08-21-muzero/</guid><description>Model architecture for single agent deterministic game which can trained without prior human knowledge about the rules and strategies..
-Main Contributions:
-Monte Carlo Tree Search (MCTS) Solve the exploitation vs exploration dilemma. The use of Representation, Prediction and Dynamic function Prediction functon $f$, predicts policy and value, $p_t$ and $v_t$ Dynamic function $g$, given the current state and action taken, $s_t$ and $a_{t+1}$ predicts the next state and immediate reward, $s_{t+1}$ and $r_{t+1}$ Representation function $h$, convert current state to latent space, $s_t$ Cons:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Paper on Deep Dive</title><link>https://isaac0804.github.io/tags/paper/</link><description>Recent content in Paper on Deep Dive</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 23 Aug 2022 14:37:05 +0800</lastBuildDate><atom:link href="https://isaac0804.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml"/><item><title>MidiBERT-Piano Paper</title><link>https://isaac0804.github.io/posts/2022-08-23-midibert-piano-paper/</link><pubDate>Tue, 23 Aug 2022 14:37:05 +0800</pubDate><guid>https://isaac0804.github.io/posts/2022-08-23-midibert-piano-paper/</guid><description>&lt;h2 id="midibert-piano"&gt;MidiBERT-Piano&lt;/h2&gt;
+&lt;h3 id="contributions"&gt;Contributions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compound word(CP) encoding is better than REMI encoding in general&lt;/li&gt;
+&lt;li&gt;BERT-based model outperforms RNN-based model in following downstream tasks:
+&lt;ul&gt;
+&lt;li&gt;Melody extraction&lt;/li&gt;
+&lt;li&gt;Velocity Prediction&lt;/li&gt;
+&lt;li&gt;Composer Identification&lt;/li&gt;
+&lt;li&gt;Emotion classfication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pretraining perform much better than the model that train from scratch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="future-work"&gt;Future work&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Implement other pretraining method to further boost the performance and robustness. Personally, I think the recent &lt;a href="https://arxiv.org/pdf/2103.10360.pdf"&gt;GLM&lt;/a&gt; paper is worth trying.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Hierarchical Perceiver Note</title><link>https://isaac0804.github.io/posts/2022-08-21-hierarchical-perceiver-note/</link><pubDate>Sun, 21 Aug 2022 14:49:56 +0800</pubDate><guid>https://isaac0804.github.io/posts/2022-08-21-hierarchical-perceiver-note/</guid><description>&lt;h2 id="hierarchical-perceiver"&gt;Hierarchical Perceiver&lt;/h2&gt;
+&lt;h3 id="problems"&gt;Problems&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Perception Models are able to process large inputs and largely focused on Global attention.&lt;/li&gt;
+&lt;li&gt;Fourier embeddings must be adjust to fit the modality of data and become memory bottleneck when dealing with high dimensional data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="novelties"&gt;Novelties&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This paper shows that by introducing some degree of locality, it can improve the efficiency of perceiver model.&lt;/li&gt;
+&lt;li&gt;Masked Auto-Encodign(MAE) plays a mojor role in learning positional embeddings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="architecture"&gt;Architecture&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Architecture of Hierarchical Perceiver" loading="lazy" src="https://isaac0804.github.io/images/20220311154434.png"&gt;&lt;/p&gt;</description></item><item><title>MuZero Note</title><link>https://isaac0804.github.io/posts/2022-08-21-muzero/</link><pubDate>Sun, 21 Aug 2022 14:48:02 +0800</pubDate><guid>https://isaac0804.github.io/posts/2022-08-21-muzero/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Model architecture for single agent deterministic game which can trained without prior human knowledge about the rules and strategies..&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Main Contributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Monte Carlo Tree Search (MCTS)
+Solve the exploitation vs exploration dilemma.&lt;/li&gt;
+&lt;li&gt;The use of Representation, Prediction and Dynamic function&lt;/li&gt;
+&lt;li&gt;Prediction functon $f$,
+&lt;ul&gt;
+&lt;li&gt;predicts policy and value, $p_t$ and $v_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dynamic function $g$,
+&lt;ul&gt;
+&lt;li&gt;given the current state and action taken, $s_t$ and $a_{t+1}$&lt;/li&gt;
+&lt;li&gt;predicts the next state and immediate reward, $s_{t+1}$ and $r_{t+1}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Representation function $h$,
+&lt;ul&gt;
+&lt;li&gt;convert current state to latent space, $s_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cons:&lt;/p&gt;</description></item></channel></rss>
