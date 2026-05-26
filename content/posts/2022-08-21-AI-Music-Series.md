@@ -1,7 +1,7 @@
 ---
 title: "AI Music Series"
 date: 2022-08-21T15:19:48+08:00
-draft: false
+draft: true
 ---
 
 ## Music Generative Model
@@ -26,7 +26,7 @@ In the next blog post I will dive into some of technical details of the project.
 
 ## Updates from Future
 
-Seems like I gave up documenting this project due to many events in my life. 
+Seems like I gave up documenting this project due to many events in my life.
 Everything is fine, just that it is harder for me to squeeze out time for it.
 I did work on this project but I found it very hard to do it on my local environment (limited storage space and 4GB VRAM).
 I believe that I will still continue this project in the future, and I am looking forward to use cloud GPU for experimenting and testing by that time
