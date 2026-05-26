@@ -1,3 +1,8 @@
 gh-pages
 gh-pages.pub
 .vscode
+.tools/
+public/
+
+hugo-server.log
+hugo-server-err.log

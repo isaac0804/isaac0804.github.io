@@ -1,45 +1,84 @@
 ---
 title: "Projects"
-layout: "project" 
-description: "These are some of the projects I worked on during my free time. Questions or collaborations are welcome."
+layout: "project"
+description: "A selection of projects spanning robotics, education technology, machine learning, and software engineering."
 summary: "Projects"
+projectSections:
+  - title: "Current Focus"
+    intro: "The work I am spending the most time on right now."
+    items:
+      - title: "First Order Robotics"
+        stage: "Current"
+        role: "Software Lead"
+        summary: "I lead the software team for RoboCup Small Size League, working on systems that need to be reliable, fast, and practical under competition pressure."
+        stack:
+          - "C++"
+          - "robotics software"
+          - "simulation"
+          - "team tooling"
+        outcome: "Driving the software direction for the team and turning research and strategy ideas into software that can hold up in real matches."
+      - title: "SPM Chat"
+        stage: "Current"
+        role: "Builder"
+        summary: "A free chatbot for Malaysian students, built to make help more accessible and lower the barrier to getting quick academic support."
+        stack:
+          - "LLM application"
+          - "education technology"
+          - "chat UX"
+          - "product engineering"
+        outcome: "Created a student-facing tool with a clear social use case: making guidance easier to access without added cost."
+  - title: "Selected Projects"
+    intro: "A few earlier projects that still represent how I like to build."
+    items:
+      - title: "Coconut SLAM"
+        stage: "Project"
+        role: "Developer"
+        summary: "A Simultaneous Localization and Mapping implementation using C++ and OpenCV."
+        stack:
+          - "C++"
+          - "OpenCV"
+          - "SLAM"
+          - "computer vision"
+        outcome: "A hands-on systems project that sharpened my understanding of robotics and perception pipelines."
+        links:
+          - label: "Source Code"
+            url: "https://github.com/isaac0804/CoconutSLAM"
+      - title: "SunShine"
+        stage: "Project"
+        role: "Mobile developer"
+        summary: "A mobile app for NASA Space Apps Challenge that helps homeowners make better solar panel purchasing decisions."
+        stack:
+          - "Flutter"
+          - "Firebase"
+          - "mobile app"
+          - "climate tech"
+        outcome: "Turned a sustainability idea into a user-facing prototype with a practical decision-support angle."
+        links:
+          - label: "Source Code"
+            url: "https://github.com/ChangeMakerGroupEdition/Sunshine"
+      - title: "Hierarchical Perceiver"
+        stage: "Project"
+        role: "ML engineer"
+        summary: "An implementation of DeepMind's Hierarchical Perceiver paper in PyTorch."
+        stack:
+          - "PyTorch"
+          - "research implementation"
+          - "deep learning"
+          - "vision models"
+        outcome: "A paper implementation project that pushed me to understand model design at a deeper level than just reading the abstract."
+        links:
+          - label: "Source Code"
+            url: "https://github.com/isaac0804/HierarchicalPerceiver"
+      - title: "iRecycle"
+        stage: "Project"
+        role: "Product builder"
+        summary: "A mobile app aimed at encouraging more sustainable habits through a gamified recycling experience."
+        stack:
+          - "mobile app"
+          - "gamification"
+          - "sustainability"
+          - "product design"
+        outcome: "An attempt to connect software, incentives, and everyday behaviour in a way that could be genuinely useful."
 ---
 
-## Status
-
-I am currently working on a project called Ling Ling v2.0. It is a piano music generative model. Stay tune.
-
-## Coconut SLAM
-
-Simultaneous Localization and Mapping (SLAM) implementation using C++ and OpenCV
-
-[Source Code](https://github.com/isaac0804/CoconutSLAM)
-
-## SunShine
-
-Mobile application developed using Flutter and Firebase for Nasa Space Apps Challenge.
-This project aims to help homeowners in making better solar panel purchasing decisions and encourage more people to utilize solar energy to save our planet Earth.
-
-[Source Code](https://github.com/ChangeMakerGroupEdition/Sunshine)
-
-## Genesis
-
-Simple Toy Game Engine implement using C++ and OpenGL
-
-[Source Code](https://github.com/isaac0804/Genesis)
-
-## iRecycle
-
-Mobile application that aims to cultivate sustainable living environment by introducing gamification system into recycling system.
-
-## PianoBERT
-
-Deep generative model to generate piano music. Implementation of [DINO](https://arxiv.org/abs/2104.14294) and [BERT](https://arxiv.org/abs/1810.04805)
-
-[Source Code](https://github.com/isaac0804/Ling-Ling)
-
-## Hierarchical Perceiver
-
-Implementation of [Deepmind's paper](https://arxiv.org/abs/2202.10890) in Pytorch.
-
-[Source Code](https://github.com/isaac0804/HierarchicalPerceiver)
+This page is a snapshot of the projects I am currently building and a few older ones that still represent how I think and work.
