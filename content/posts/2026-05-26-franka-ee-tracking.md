@@ -4,8 +4,8 @@ date: 2026-05-26T18:00:00+01:00
 draft: false
 tags: ["Robotics", "Reinforcement Learning", "Transformer", "MuJoCo"]
 cover:
-    image: images/franka-tracking-demo.gif
-    alt: "Franka Panda end-effector tracking a moving target"
+    image: images/franka-tracking-circle.gif
+    alt: "Franka Panda end-effector tracking a circular trajectory"
     relative: false
 ---
 
@@ -92,6 +92,12 @@ Comparing at 5 million steps, two-seed mean (stochastic trajectories averaged ov
 On periodic trajectories the transformer is **39% better on circle** and **28% on figure-eight**. On random walk, both land around 20mm — essentially tied.
 
 ![Comparison bar chart](/images/franka-comparison-bars.png)
+
+The three training trajectories, transformer policy at 5M steps:
+
+| Circle | Figure-8 | Moving Target |
+|:---:|:---:|:---:|
+| ![Circle tracking](/images/franka-tracking-circle.gif) | ![Figure-8 tracking](/images/franka-tracking-figure8.gif) | ![Moving target tracking](/images/franka-tracking-moving-target.gif) |
 
 Out of distribution is where the gap gets larger. On square paths with hard corners (never seen in training), the transformer achieves **4.2mm vs the MLP's 7.5mm** (44% better). The fine lookahead sees the corner 100ms before it arrives, and the transformer uses that information better. The same pattern holds for asymmetric rectangles: 5.1mm vs 8.6mm.
 
