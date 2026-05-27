@@ -60,40 +60,42 @@ At 300k steps, the transformer matched the MLP at 10 million steps on periodic t
 
 ## The ablation I found most interesting
 
-I ran three ablations to check which components actually mattered.
+I ran three ablations, each removing or replacing one component from the canonical architecture (self-attention only, paired tokens, positional embedding):
 
-| | Circle (mm) | Figure-8 (mm) | Verdict |
-|---|---|---|---|
-| Full model | 5.0 | 6.5 | baseline |
-| No positional embedding | 11.1 | 10.7 | PE is critical |
-| **No cross-attention** | **5.7** | **5.2** | xattn is redundant |
-| Unpaired tokens | 6.8 | 6.9 | pairing helps |
+| | Moving Target | Circle | Figure-8 | Verdict |
+|---|---|---|---|---|
+| **Canonical (self-attn, no xattn)** | **24.4mm** | **5.7mm** | **5.2mm** | — baseline |
+| A: − positional embedding | 26.8mm | 11.1mm | 10.7mm | PE critical |
+| B: + cross-attention | 27.0mm | 5.0mm | 6.5mm | xattn hurts |
+| C: unpaired tokens | 26.6mm | 6.8mm | 6.9mm | pairing helps |
 
 ![Ablation results](/images/franka-ablation-bar.png)
 
-Ablation B surprised me. I had added a cross-attention layer expecting it to help the policy relate its current state to the queued commands. Removing it *improved* every metric.
+Ablation B surprised me. I had added a cross-attention layer expecting it to help the policy relate its current state to the queued commands. Removing it *improved* every metric except circle by a fraction.
 
 In hindsight it makes sense. The paired token design already encodes the cmd↔fine relationship directly. Cross-attention was solving a problem that no longer existed. Sometimes the right inductive bias makes a component redundant rather than complementary.
+
+Ablation A was the most instructive failure. Without positional embeddings, `slot[0]` and `slot[4]` are indistinguishable to the encoder — the temporal ordering of the delay queue is lost. On periodic trajectories this is catastrophic (+5–6mm on circle and figure-8), because the phase relationship between queued commands is the key signal. Moving target is less affected because random-walk correction doesn't require slot ordering.
 
 ---
 
 ## Results at matched compute
 
-Comparing at 5 million steps, where both architectures use approximately the same training FLOPs:
+Comparing at 5 million steps, two-seed mean (stochastic trajectories averaged over 10 seeds):
 
 | | Circle | Figure-8 | Moving Target |
 |---|---|---|---|
 | IK (100ms delay) | 11.5mm | 7.7mm | 48.6 ± 8.0mm |
 | MLP 5M | 7.9mm | 6.7mm | 19.6mm |
-| **Transformer 5M** | **4.5mm** | **5.0mm** | **20.7mm** |
+| **Transformer 5M** | **4.8mm** | **4.8mm** | **20.6 ± 3.3mm** |
 
-On periodic trajectories the transformer is 43% better on circle and 25% on figure-eight. On random walk, both land around 20mm — essentially tied.
+On periodic trajectories the transformer is **39% better on circle** and **28% on figure-eight**. On random walk, both land around 20mm — essentially tied.
 
 ![Comparison bar chart](/images/franka-comparison-bars.png)
 
-Out of distribution is where the gap gets larger. On square paths with hard corners (never seen in training), the transformer achieves 4.0mm vs the MLP's 7.5mm. The fine lookahead sees the corner 100ms before it arrives, and the transformer uses that information better.
+Out of distribution is where the gap gets larger. On square paths with hard corners (never seen in training), the transformer achieves **4.2mm vs the MLP's 7.5mm** (44% better). The fine lookahead sees the corner 100ms before it arrives, and the transformer uses that information better. The same pattern holds for asymmetric rectangles: 5.1mm vs 8.6mm.
 
-The transformer also produces smoother joint commands — 20–45% lower action roughness across all trajectories, with fewer saturated outputs. This came from the architecture, not the reward function. There was no smoothness penalty during training.
+The transformer also produces **38% smoother** joint commands (action roughness 0.37 vs 0.60). This came from the architecture, not the reward function — there was no smoothness penalty during training. The paired-slot structure naturally produces less chattering because the policy anticipates rather than reacts.
 
 ---
 
@@ -113,7 +115,7 @@ The story is not "MLP stops working." It is more that the inductive bias gives t
 
 The fine lookahead uses oracle future target positions. In a real system you would need a predictor — a Kalman smoother or a learned model. The architecture is set up so you can swap this in without changing anything else.
 
-I also only tracked position. Extending to orientation (position + quaternion) would just mean wider tokens in the same paired structure. I have not done this yet.
+I have since extended this work to **6-DoF orientation tracking** (position + quaternion), where the same paired-slot structure applies with 7D tokens instead of 3D. The orientation task is considerably harder — the IK baseline starts at ~70mm position error and ~30° orientation error under delay — but the same architectural principles carry over cleanly.
 
 ---
 
