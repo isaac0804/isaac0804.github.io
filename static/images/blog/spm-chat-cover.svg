@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e0f0"/>
+      <stop offset="50%" style="stop-color:#dce8f5"/>
+      <stop offset="100%" style="stop-color:#d0eef8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b5ce7"/>
+      <stop offset="100%" style="stop-color:#4a9ebb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.08" stroke="#8888aa" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="#2a2a3e" font-size="38" font-weight="700">I Built a 'ChatGPT' for SPM Students</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="120" text-anchor="middle" fill="#666" font-size="18">good model + bad context  &lt;  ok model + good context</text>
+
+  <!-- Flow diagram — all boxes same height, vertically centered -->
+  <!-- Student box -->
+  <rect x="100" y="195" width="170" height="250" rx="16" fill="#ffffff" stroke="#4a9ebb" stroke-width="2.5"/>
+  <text x="185" y="300" text-anchor="middle" fill="#333" font-size="48">&#127891;</text>
+  <text x="185" y="350" text-anchor="middle" fill="#2a2a2a" font-size="22" font-weight="600">Student</text>
+  <text x="185" y="380" text-anchor="middle" fill="#666" font-size="15">asks a question</text>
+
+  <!-- Arrow 1 -->
+  <line x1="280" y1="320" x2="365" y2="320" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="365,312 382,320 365,328" fill="#6b5ce7"/>
+
+  <!-- SPM Chat box -->
+  <rect x="395" y="195" width="350" height="250" rx="16" fill="#ffffff" stroke="#6b5ce7" stroke-width="2.5"/>
+  <rect x="395" y="195" width="350" height="50" rx="16" fill="#6b5ce7"/>
+  <rect x="395" y="225" width="350" height="20" fill="#6b5ce7"/>
+  <text x="570" y="228" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">SPM Chat</text>
+
+  <!-- Context sub-box -->
+  <rect x="415" y="262" width="150" height="110" rx="10" fill="#f0f6fa" stroke="#4a9ebb" stroke-width="1.5"/>
+  <text x="490" y="290" text-anchor="middle" fill="#3a7fa0" font-size="12" font-weight="600" letter-spacing="1">CONTEXT</text>
+  <text x="490" y="318" text-anchor="middle" fill="#444" font-size="15">&#128218; Syllabus</text>
+  <text x="490" y="342" text-anchor="middle" fill="#444" font-size="15">&#128221; Past papers</text>
+  <text x="490" y="366" text-anchor="middle" fill="#444" font-size="15">&#127919; Notes</text>
+
+  <!-- Model sub-box -->
+  <rect x="580" y="262" width="150" height="110" rx="10" fill="#f0edff" stroke="#6b5ce7" stroke-width="1.5"/>
+  <text x="655" y="290" text-anchor="middle" fill="#5a4abf" font-size="12" font-weight="600" letter-spacing="1">SMALL LM</text>
+  <text x="655" y="318" text-anchor="middle" fill="#444" font-size="15">&#9889; Fast</text>
+  <text x="655" y="342" text-anchor="middle" fill="#444" font-size="15">&#128176; Cheap</text>
+  <text x="655" y="366" text-anchor="middle" fill="#444" font-size="15">&#127919; Focused</text>
+
+  <!-- Arrow 2 -->
+  <line x1="755" y1="320" x2="840" y2="320" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="840,312 857,320 840,328" fill="#4a9ebb"/>
+
+  <!-- Answer box -->
+  <rect x="870" y="195" width="170" height="250" rx="16" fill="#ffffff" stroke="#4abb5c" stroke-width="2.5"/>
+  <text x="955" y="300" text-anchor="middle" fill="#333" font-size="48">&#9989;</text>
+  <text x="955" y="350" text-anchor="middle" fill="#2a2a2a" font-size="22" font-weight="600">Accurate</text>
+  <text x="955" y="380" text-anchor="middle" fill="#666" font-size="15">syllabus-grounded</text>
+
+  <!-- Bottom tag line -->
+  <text x="600" y="530" text-anchor="middle" fill="#888" font-size="15">learnings from building, launching, and fumbling</text>
+</svg>
