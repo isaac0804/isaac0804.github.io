@@ -36,7 +36,7 @@ The situation of asymmetric information and lack of guidance made me stop improv
 Other than that, in some of the coutries, students can skip grade if they are 'ready'. But it is not common to skip grade in my country (at least I never saw a case), so I kinda lost the oppurtunity to save some of my time.
 
 - I am just not hardworking enough, because my mindset told me I can do most of the thing easily, which sets up to the failure.
-This is the reason why I think this [video][youtube-link] reveals the truth.
+  This is the reason why I think this [video][youtube-link] reveals the truth.
 
 > Gifted kids are actually Special Needs
 
@@ -46,9 +46,9 @@ This is the reason why I think this [video][youtube-link] reveals the truth.
 
 - Gifted kids lose their oppurtunities to develop their study habits when they are young.
 
-It is counter-intuitive for the gifted kids to study when the syllabus is too easy for them. 
+It is counter-intuitive for the gifted kids to study when the syllabus is too easy for them.
 Sometimes, some of the homeworks are just too easy for them and they quickly find study boring.
-Most of the time, they tend to study only few days before the exam. 
+Most of the time, they tend to study only few days before the exam.
 Other way of speaking, they train themselves to pass the exam using their raw intellect.
 When the syllabus become harder as they grew up, they do not equipped with the proper study habit that they need and their raw intellect can no longer compete with other students.
 As a result, they hit a wall later in their life.
