@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 660" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <filter id="card-shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="pill-shadow" x="-2%" y="-6%" width="104%" height="118%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="1180" height="660" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Top Header Banner -->
+  <g transform="translate(36, 22)">
+    <rect x="0" y="0" width="1108" height="46" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    <text x="20" y="28" font-size="13.5" font-weight="700" fill="#0f172a" letter-spacing="0.03em">MULTI-ROBOT TACTIC SCHEDULING TIMELINE</text>
+    <text x="355" y="28" font-size="12" font-weight="500" fill="#64748b">|   The OS Scheduler Analogy: 6 Cores, Dynamic Partitioning &amp; Barrier Resets</text>
+  </g>
+
+  <!-- Phase Header Badges -->
+  <!-- Phase 1 -->
+  <g transform="translate(196, 80)">
+    <rect x="0" y="0" width="270" height="26" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="135" y="17" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Phase 1: Build-up Play (t0 – t4)</text>
+  </g>
+
+  <!-- Phase 2 -->
+  <g transform="translate(476, 80)">
+    <rect x="0" y="0" width="248" height="26" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="124" y="17" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Phase 2: Shot Execution (t5 – t8)</text>
+  </g>
+
+  <!-- Barrier Reset Marker -->
+  <g transform="translate(734, 80)">
+    <rect x="0" y="0" width="76" height="26" rx="5" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="38" y="17" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">STOP (t9)</text>
+  </g>
+
+  <!-- Phase 3 -->
+  <g transform="translate(820, 80)">
+    <rect x="0" y="0" width="304" height="26" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="152" y="17" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Phase 3: Resumed Play (t10 – t15)</text>
+  </g>
+
+  <!-- Background vertical phase guidelines -->
+  <line x1="196" y1="112" x2="196" y2="506" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="471" y1="112" x2="471" y2="506" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="729" y1="112" x2="729" y2="506" stroke="#fecdd3" stroke-width="1.2"/>
+  <line x1="815" y1="112" x2="815" y2="506" stroke="#fecdd3" stroke-width="1.2"/>
+
+  <!-- Solid Clean Barrier Reset Band (No Dashed Outline) -->
+  <rect x="734" y="116" width="76" height="386" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+
+  <!-- ==================== ROW 0: Referee ==================== -->
+  <g transform="translate(36, 118)">
+    <text x="0" y="20" font-size="12" font-weight="700" fill="#475569">REFEREE</text>
+    <text x="0" y="33" font-size="9.5" font-weight="500" fill="#94a3b8">GameController</text>
+
+    <!-- Normal Start P1 & P2 -->
+    <rect x="160" y="4" width="528" height="28" rx="5" fill="#334155" filter="url(#pill-shadow)"/>
+    <text x="424" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="#f8fafc">NORMAL_START</text>
+
+    <!-- Stop / Foul -->
+    <rect x="698" y="4" width="76" height="28" rx="5" fill="#ef4444" filter="url(#pill-shadow)"/>
+    <text x="736" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">STOP</text>
+
+    <!-- Resumed Normal Start -->
+    <rect x="784" y="4" width="304" height="28" rx="5" fill="#334155" filter="url(#pill-shadow)"/>
+    <text x="936" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="#f8fafc">NORMAL_START</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="36" y1="164" x2="1144" y2="164" stroke="#e2e8f0" stroke-width="1.2"/>
+
+  <!-- ==================== ROW 1: Robot 0 (Goalkeeper) ==================== -->
+  <g transform="translate(36, 174)">
+    <text x="0" y="19" font-size="12.5" font-weight="700" fill="#0f172a">Robot 0</text>
+    <text x="0" y="33" font-size="9.5" font-weight="700" fill="#64748b">GOALKEEPER</text>
+
+    <!-- P1 & P2: Dedicated Goalkeeper Tactic -->
+    <rect x="160" y="4" width="528" height="34" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="424" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#334155">GoalkeeperTactic (Dedicated Goal-line Guard)</text>
+
+    <!-- Reset Column -->
+    <text x="736" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">RESET</text>
+
+    <!-- P3: Resumed Goalkeeper Tactic -->
+    <rect x="784" y="4" width="304" height="34" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="936" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#334155">GoalkeeperTactic</text>
+  </g>
+
+  <!-- ==================== ROW 2: Robot 1 (Core 1) ==================== -->
+  <!-- Note: GiveAndGo is CONNECTED across Phase 1 and Phase 2, transitioning into is_committed() -->
+  <g transform="translate(36, 226)">
+    <text x="0" y="19" font-size="12.5" font-weight="700" fill="#0f172a">Robot 1</text>
+    <text x="0" y="33" font-size="9.5" font-weight="700" fill="#0284c7">CORE 1</text>
+
+    <!-- Connected Continuous Tactic Block (P1 + P2) -->
+    <rect x="160" y="4" width="528" height="34" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5" filter="url(#pill-shadow)"/>
+    
+    <!-- P1 section label -->
+    <text x="290" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#0369a1">GiveAndGoTactic (Passing)</text>
+
+    <!-- P2 embedded locked state inside the same tactic -->
+    <rect x="430" y="4" width="258" height="34" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="2"/>
+    <text x="559" y="25" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9f1239">🔒 is_committed() (Locked Strike)</text>
+
+    <!-- Reset Column -->
+    <text x="736" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">RESET</text>
+
+    <!-- P3: PressAndContain -->
+    <rect x="784" y="4" width="304" height="34" rx="6" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="936" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#4338ca">PressAndContainTactic (High Press)</text>
+  </g>
+
+  <!-- ==================== ROW 3: Robot 2 (Core 2) ==================== -->
+  <!-- Note: GiveAndGo is CONNECTED across Phase 1 and Phase 2 -->
+  <g transform="translate(36, 278)">
+    <text x="0" y="19" font-size="12.5" font-weight="700" fill="#0f172a">Robot 2</text>
+    <text x="0" y="33" font-size="9.5" font-weight="700" fill="#0284c7">CORE 2</text>
+
+    <!-- Connected Continuous Tactic Block (P1 + P2) -->
+    <rect x="160" y="4" width="528" height="34" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5" filter="url(#pill-shadow)"/>
+    
+    <!-- P1 section label -->
+    <text x="290" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#0369a1">GiveAndGoTactic (Receiving)</text>
+
+    <!-- P2 embedded locked state inside the same tactic -->
+    <rect x="430" y="4" width="258" height="34" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="2"/>
+    <text x="559" y="25" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9f1239">🔒 is_committed() (Locked Receive)</text>
+
+    <!-- Reset Column -->
+    <text x="736" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">RESET</text>
+
+    <!-- P3: PressAndContain -->
+    <rect x="784" y="4" width="304" height="34" rx="6" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="936" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#4338ca">PressAndContainTactic (High Press)</text>
+  </g>
+
+  <!-- ==================== ROW 4: Robot 3 (Core 3) ==================== -->
+  <g transform="translate(36, 330)">
+    <text x="0" y="19" font-size="12.5" font-weight="700" fill="#0f172a">Robot 3</text>
+    <text x="0" y="33" font-size="9.5" font-weight="700" fill="#0284c7">CORE 3</text>
+
+    <!-- P1 & P2: PressAndContain -->
+    <rect x="160" y="4" width="528" height="34" rx="6" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="424" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#4338ca">PressAndContainTactic (Midfield Press)</text>
+
+    <!-- Reset Column -->
+    <text x="736" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">RESET</text>
+
+    <!-- P3: DefensiveWall -->
+    <rect x="784" y="4" width="304" height="34" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="936" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">DefensiveWallTactic</text>
+  </g>
+
+  <!-- ==================== ROW 5: Robot 4 (Core 4) ==================== -->
+  <g transform="translate(36, 382)">
+    <text x="0" y="19" font-size="12.5" font-weight="700" fill="#0f172a">Robot 4</text>
+    <text x="0" y="33" font-size="9.5" font-weight="700" fill="#0284c7">CORE 4</text>
+
+    <!-- P1: PressAndContain -->
+    <rect x="160" y="4" width="260" height="34" rx="6" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="290" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#4338ca">PressAndContainTactic</text>
+
+    <!-- P2: Repartitioned to Support (Free Core) -->
+    <rect x="430" y="4" width="258" height="34" rx="6" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.8" filter="url(#pill-shadow)"/>
+    <text x="559" y="25" text-anchor="middle" font-size="11" font-weight="700" fill="#0f766e">⚡ SupportRole (Re-allocated)</text>
+
+    <!-- Reset Column -->
+    <text x="736" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">RESET</text>
+
+    <!-- P3: DefensiveWall -->
+    <rect x="784" y="4" width="304" height="34" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="936" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">DefensiveWallTactic</text>
+  </g>
+
+  <!-- ==================== ROW 6: Robot 5 (Core 5) ==================== -->
+  <g transform="translate(36, 434)">
+    <text x="0" y="19" font-size="12.5" font-weight="700" fill="#0f172a">Robot 5</text>
+    <text x="0" y="33" font-size="9.5" font-weight="700" fill="#0284c7">CORE 5</text>
+
+    <!-- P1 & P2: DefensiveAnchor -->
+    <rect x="160" y="4" width="528" height="34" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="424" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">DefensiveAnchorTactic (Deep Sweeper)</text>
+
+    <!-- Reset Column -->
+    <text x="736" y="25" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">RESET</text>
+
+    <!-- P3: CounterRunner -->
+    <rect x="784" y="4" width="304" height="34" rx="6" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.2" filter="url(#pill-shadow)"/>
+    <text x="936" y="25" text-anchor="middle" font-size="11.5" font-weight="600" fill="#6d28d9">CounterRunnerTactic (Fast Break)</text>
+  </g>
+
+  <!-- ==================== FOOTER: Key Invariants across 3 distinct lines ==================== -->
+  <g transform="translate(36, 508)">
+    <rect x="0" y="0" width="1108" height="126" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    
+    <!-- Header title -->
+    <rect x="16" y="12" width="130" height="22" rx="4" fill="#0f172a"/>
+    <text x="81" y="27" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">KEY INVARIANTS</text>
+
+    <!-- Line 1 -->
+    <circle cx="26" cy="50" r="4" fill="#e11d48"/>
+    <text x="38" y="54" font-size="11.5" font-weight="700" fill="#0f172a">1. Non-Preemptible Commitment:</text>
+    <text x="245" y="54" font-size="11.5" font-weight="500" fill="#334155">Tactics declare <tspan font-weight="600" fill="#b91c1c">is_committed() = True</tspan> during critical actions (like a strike); the scheduler is strictly barred from reassigning them.</text>
+
+    <!-- Line 2 -->
+    <circle cx="26" cy="76" r="4" fill="#0d9488"/>
+    <text x="38" y="80" font-size="11.5" font-weight="700" fill="#0f172a">2. Dynamic 60 Hz Re-allocation:</text>
+    <text x="245" y="80" font-size="11.5" font-weight="500" fill="#334155">Free cores (e.g. Robot 4) are dynamically re-partitioned each tick by the scheduler without disrupting locked tactics.</text>
+
+    <!-- Line 3 -->
+    <circle cx="26" cy="102" r="4" fill="#ef4444"/>
+    <text x="38" y="106" font-size="11.5" font-weight="700" fill="#0f172a">3. Universal Barrier Reset:</text>
+    <text x="245" y="106" font-size="11.5" font-weight="500" fill="#334155">Any referee whistle or stoppage triggers a simultaneous wipe across all 6 robots, guaranteeing clean resumption.</text>
+  </g>
+</svg>
