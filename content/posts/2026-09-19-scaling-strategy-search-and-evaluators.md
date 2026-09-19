@@ -5,8 +5,8 @@ draft: false
 tags: ["Robotics", "RoboCup", "AI Agents", "Evaluation", "Software Engineering"]
 summary: "Moving past the vibe check trap in autonomous sports: building a 3-tier evaluation pyramid, seed pairing to defeat simulation noise, and pairing with AI coding agents to search, debug, and benchmark tactics."
 cover:
-    image: images/blog/tactic_scheduling_timeline.svg
-    alt: "Multi-Robot Tactic Scheduling Timeline: managing robot allocation across ticks, commitment locks, and barrier resets"
+    image: images/blog/evaluation_pyramid_harness.svg
+    alt: "The 3-Tier Evaluation Pyramid and Autonomous Agentic Coding Harness"
     relative: false
 ---
 
@@ -59,7 +59,7 @@ Code legibility is meaningless if the robots play worse. We measured behavioral 
 
 Running a full 10-minute 6v6 match to test every small code modification is impossibly slow and statistically noisy. To scale strategy development, we organized our testing into a **3-tier evaluation pyramid**:
 
-![The 3-Tier Evaluation Pyramid: Tier 1 Unit Tests (<1s), Tier 2 Scenario Benchmarks (10-30s), Tier 3 Tournament Ladder (Minutes-Hours)](/images/blog/system_architecture.svg)
+![The 3-Tier Evaluation Pyramid and Autonomous Agentic Coding Harness](/images/blog/evaluation_pyramid_harness.svg)
 
 ### Tier 1: Unit & Invariant Tests (< 1 Second)
 The base of the pyramid consists of pure Python unit tests running in memory without spinning up a simulator.
