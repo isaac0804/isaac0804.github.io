@@ -4,6 +4,10 @@ date: 2026-09-18T00:00:00Z
 draft: false
 tags: ["Robotics", "RoboCup", "Software Architecture", "Python", "Operating Systems"]
 summary: "Why Behavior Trees broke down for multi-agent coordination, how modeling our scheduler after an OS kernel solved dynamic regrouping, and the three safety invariants that eliminate race conditions."
+cover:
+    image: images/blog/os_scheduler_model.svg
+    alt: "The OS Scheduler Model: Tactics as processes, Strategy as kernel scheduler, and Robots as CPU cores"
+    relative: false
 ---
 
 *By Isaac, First Order Robotics Team*

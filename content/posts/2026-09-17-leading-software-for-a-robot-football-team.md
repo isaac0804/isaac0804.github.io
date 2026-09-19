@@ -4,6 +4,10 @@ date: 2026-09-17T00:00:00Z
 draft: false
 tags: ["Robotics", "RoboCup", "Software Architecture", "Python", "Autonomous Systems"]
 summary: "An architectural overview of our RoboCup Small Size League robot control stack, lessons from our Great Exhibition Road Festival milestone, and open challenges as we scale to a full 6v6 squad."
+cover:
+    image: images/blog/festival_2.jpg
+    alt: "Two autonomous robots playing 1v1 football live on carpet at the Great Exhibition Road Festival"
+    relative: false
 ---
 
 *By Isaac, First Order Robotics Team*
@@ -34,7 +38,7 @@ Prior to this summer, much of our work was focused on getting individual subsyst
 
 That changed in **June 2026** at Imperial's **Great Exhibition Road Festival**, where we demonstrated our team's first full-stack software-to-hardware integration on **two physical robots** live on the carpet.
 
-![Two autonomous robots running 1v1 live at the Great Exhibition Road Festival](/images/blog/festival_2.jpg)
+![Autonomous robots live on carpet at the Great Exhibition Road Festival](/images/blog/festival_1.jpg)
 
 Seeing the complete end-to-end loop come alive in public—from overhead camera tracking to host strategy and real motor actuation—was a massive milestone for our team. It proved that our core concepts worked, and it gave us the momentum to double down and put serious engineering effort into scaling up. 
 

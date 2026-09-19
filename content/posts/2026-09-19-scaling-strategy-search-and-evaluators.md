@@ -4,6 +4,10 @@ date: 2026-09-19T00:00:00Z
 draft: false
 tags: ["Robotics", "RoboCup", "AI Agents", "Evaluation", "Software Engineering"]
 summary: "Moving past the vibe check trap in autonomous sports: building a 3-tier evaluation pyramid, seed pairing to defeat simulation noise, and pairing with AI coding agents to search, debug, and benchmark tactics."
+cover:
+    image: images/blog/tactic_scheduling_timeline.svg
+    alt: "Multi-Robot Tactic Scheduling Timeline: managing robot allocation across ticks, commitment locks, and barrier resets"
+    relative: false
 ---
 
 *By Isaac, First Order Robotics Team*
