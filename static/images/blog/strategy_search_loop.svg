@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <filter id="card-shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arr-slate" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+    </marker>
+    <marker id="arr-emerald" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 10 L 5 0 L 9 10 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="960" height="360" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(40, 20)">
+    <rect width="880" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    <text x="20" y="25" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="0.04em">THE AGENTIC STRATEGY SEARCH LOOP</text>
+    <text x="315" y="25" font-size="12" font-weight="500" fill="#64748b">|   Autonomous AI Coding Agents Searching Strategy Code</text>
+  </g>
+
+  <!-- ==================== BOX 1: AI CODING AGENT ==================== -->
+  <g transform="translate(40, 78)">
+    <rect width="250" height="170" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Title Header -->
+    <rect x="12" y="12" width="226" height="26" rx="4" fill="#0284c7"/>
+    <text x="125" y="29" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.02em">AI Coding Agent</text>
+
+    <!-- Bullets -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="20" font-size="11.5" font-weight="600" fill="#0369a1">• The Search Operator</text>
+      <text x="0" y="46" font-size="11" font-weight="400" fill="#334155">• Reads AGENTS.md</text>
+      <text x="0" y="72" font-size="11" font-weight="400" fill="#334155">• Proposes tactics</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1: Edits -->
+  <g transform="translate(290, 152)">
+    <line x1="8" y1="11" x2="52" y2="11" stroke="#0284c7" stroke-width="2" marker-end="url(#arr-blue)"/>
+    <rect x="14" y="-8" width="34" height="16" rx="3" fill="#e0f2fe"/>
+    <text x="31" y="4" text-anchor="middle" font-size="9" font-weight="700" fill="#0284c7">Edits</text>
+  </g>
+
+  <!-- ==================== BOX 2: STRATEGY CODEBASE ==================== -->
+  <g transform="translate(355, 78)">
+    <rect width="250" height="170" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Title Header -->
+    <rect x="12" y="12" width="226" height="26" rx="4" fill="#0f172a"/>
+    <text x="125" y="29" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.02em">Strategy Codebase</text>
+
+    <!-- Bullets -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="20" font-size="11.5" font-weight="600" fill="#0f172a">• The Search Space</text>
+      <text x="0" y="46" font-size="11" font-weight="400" fill="#334155">• Disjoint partitions</text>
+      <text x="0" y="72" font-size="11" font-weight="400" fill="#334155">• Private typed mem</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2: Runs -->
+  <g transform="translate(605, 152)">
+    <line x1="8" y1="11" x2="52" y2="11" stroke="#64748b" stroke-width="2" marker-end="url(#arr-slate)"/>
+    <rect x="14" y="-8" width="34" height="16" rx="3" fill="#f1f5f9"/>
+    <text x="31" y="4" text-anchor="middle" font-size="9" font-weight="700" fill="#475569">Runs</text>
+  </g>
+
+  <!-- ==================== BOX 3: EVALUATION & TELEMETRY ==================== -->
+  <g transform="translate(670, 78)">
+    <rect width="250" height="170" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Title Header -->
+    <rect x="12" y="12" width="226" height="26" rx="4" fill="#059669"/>
+    <text x="125" y="29" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.02em">Evaluation &amp; Telemetry</text>
+
+    <!-- Bullets -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="20" font-size="11.5" font-weight="600" fill="#047857">• Interpretable Signal</text>
+      <text x="0" y="46" font-size="11" font-weight="400" fill="#334155">• 3 Benches (&lt;1s, 10s, mins)</text>
+      <text x="0" y="72" font-size="11" font-weight="400" fill="#334155">• MatchLog &amp; render_window()</text>
+    </g>
+  </g>
+
+  <!-- ==================== FEEDBACK LOOP ==================== -->
+  <path d="M 795 248 L 795 298 L 165 298 L 165 256" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arr-emerald)"/>
+  
+  <!-- Pill along the bottom feedback line -->
+  <g transform="translate(290, 285)">
+    <rect width="380" height="26" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2"/>
+    <text x="190" y="17" text-anchor="middle" font-size="10" font-weight="600" fill="#047857">Diagnostic Feedback: Tracebacks, Stalls, Trails</text>
+  </g>
+</svg>

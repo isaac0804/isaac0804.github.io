@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <filter id="card-shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="960" height="300" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(40, 20)">
+    <rect width="880" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    <text x="20" y="25" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="0.04em">THREE WAYS TO EVALUATE STRATEGY</text>
+    <text x="315" y="25" font-size="12" font-weight="500" fill="#64748b">|   Different Evaluation Tools for Different Search Needs</text>
+  </g>
+
+  <!-- ==================== CARD 1: TEST BENCH ==================== -->
+  <g transform="translate(40, 78)">
+    <rect width="260" height="186" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header -->
+    <rect x="12" y="12" width="236" height="28" rx="4" fill="#059669"/>
+    
+    <!-- Icon 1: Checkmark -->
+    <g transform="translate(24, 17)">
+      <circle cx="9" cy="9" r="8" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+      <polyline points="5.5 9 8 11.5 12.5 6.5" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="138" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.02em">1. Test Bench</text>
+
+    <!-- Content -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="20" font-size="12" font-weight="700" fill="#064e3b">Fixed Unit Tests</text>
+      <text x="0" y="44" font-size="11" font-weight="500" fill="#64748b">• Speed: &lt; 1 Second (in-memory)</text>
+      <text x="0" y="68" font-size="11" font-weight="500" fill="#334155">• Focus: Contracts &amp; geometry</text>
+      <text x="0" y="92" font-size="11" font-weight="500" fill="#334155">• Signal: Stack traces on failure</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 2: SCENARIO BENCH ==================== -->
+  <g transform="translate(350, 78)">
+    <rect width="260" height="186" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header -->
+    <rect x="12" y="12" width="236" height="28" rx="4" fill="#0284c7"/>
+    
+    <!-- Icon 2: Target Crosshair -->
+    <g transform="translate(24, 17)">
+      <circle cx="9" cy="9" r="8" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+      <circle cx="9" cy="9" r="3.5" fill="none" stroke="#ffffff" stroke-width="1.4"/>
+      <line x1="9" y1="1" x2="9" y2="4" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="9" y1="14" x2="9" y2="17" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="1" y1="9" x2="4" y2="9" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+      <line x1="14" y1="9" x2="17" y2="9" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+    </g>
+    <text x="138" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.02em">2. Scenario Bench</text>
+
+    <!-- Content -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="20" font-size="12" font-weight="700" fill="#0369a1">Wide Scenario Coverage</text>
+      <text x="0" y="44" font-size="11" font-weight="500" fill="#64748b">• Speed: 10–30 Seconds (sim)</text>
+      <text x="0" y="68" font-size="11" font-weight="500" fill="#334155">• Focus: 5s match situations</text>
+      <text x="0" y="92" font-size="11" font-weight="500" fill="#334155">• Signal: Seed-paired Δ (noise-free)</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 3: TOURNAMENT ==================== -->
+  <g transform="translate(660, 78)">
+    <rect width="260" height="186" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header -->
+    <rect x="12" y="12" width="236" height="28" rx="4" fill="#9333ea"/>
+    
+    <!-- Icon 3: Trophy -->
+    <g transform="translate(24, 17)">
+      <path d="M4 2.5h10v5a5 5 0 0 1-10 0V2.5z" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4 4.5H2a1.5 1.5 0 0 0-1.5 1.5V7a1.5 1.5 0 0 0 1.5 1.5h2" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M14 4.5h2a1.5 1.5 0 0 1 1.5 1.5V7a1.5 1.5 0 0 1-1.5 1.5h-2" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round"/>
+      <line x1="9" y1="12.5" x2="9" y2="15.5" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="5.5" y1="15.5" x2="12.5" y2="15.5" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <text x="138" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.02em">3. Tournament</text>
+
+    <!-- Content -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="20" font-size="12" font-weight="700" fill="#581c87">Head-to-Head Matches</text>
+      <text x="0" y="44" font-size="11" font-weight="500" fill="#64748b">• Speed: Minutes to Hours</text>
+      <text x="0" y="68" font-size="11" font-weight="500" fill="#334155">• Focus: Full 6v6 round-robin</text>
+      <text x="0" y="92" font-size="11" font-weight="500" fill="#334155">• Signal: Macro win rates &amp; Elo</text>
+    </g>
+  </g>
+</svg>

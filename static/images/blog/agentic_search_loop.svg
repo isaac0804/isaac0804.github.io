@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 580" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <filter id="card-shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="pill-shadow" x="-2%" y="-6%" width="104%" height="118%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow-down-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 0 L 5 10 L 9 0 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrow-right-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrow-down-slate" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 0 L 5 10 L 9 0 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-up-amber" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 10 L 5 0 L 9 10 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrow-right-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1040" height="580" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(32, 20)">
+    <rect width="976" height="42" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    <text x="20" y="26" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="0.04em">THE AGENTIC STRATEGY SEARCH LOOP</text>
+    <text x="375" y="26" font-size="12" font-weight="500" fill="#64748b">|   Coding Agents as Policy Operators (P_θ) with Runtime Observability Feedback</text>
+  </g>
+
+  <!-- ==================== TOP: HUMAN ARCHITECT ==================== -->
+  <g transform="translate(320, 78)">
+    <rect width="400" height="56" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="14" y="14" width="28" height="28" rx="4" fill="#0f172a"/>
+    <text x="28" y="32" text-anchor="middle" font-size="13" fill="#ffffff">👤</text>
+    <text x="52" y="26" font-size="11.5" font-weight="700" fill="#0f172a">Human Architect (Curator)</text>
+    <text x="52" y="42" font-size="10.5" font-weight="500" fill="#64748b">Defines Invariants, Objective Metrics &amp; Curates Scenarios</text>
+  </g>
+
+  <!-- Down Arrow from Human to Agent -->
+  <line x1="520" y1="134" x2="520" y2="158" stroke="#64748b" stroke-width="2" marker-end="url(#arrow-down-slate)"/>
+  <rect x="470" y="140" width="100" height="16" rx="3" fill="#f1f5f9"/>
+  <text x="520" y="152" text-anchor="middle" font-size="9" font-weight="600" fill="#475569">Target Scenarios</text>
+
+  <!-- ==================== MIDDLE ROW: AGENT & EXECUTION ==================== -->
+  <!-- LEFT: AI CODING AGENT -->
+  <g transform="translate(32, 172)">
+    <rect width="420" height="106" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="16" y="14" width="28" height="28" rx="4" fill="#0284c7"/>
+    <text x="30" y="32" text-anchor="middle" font-size="13" fill="#ffffff">🤖</text>
+    
+    <text x="54" y="26" font-size="12" font-weight="700" fill="#0369a1">AI Coding Agent (Policy Operator P_θ)</text>
+    <text x="54" y="40" font-size="10" font-weight="600" fill="#0284c7">Proposes / Mutates Strategy Code</text>
+    
+    <g transform="translate(16, 52)">
+      <rect width="388" height="42" rx="5" fill="#ffffff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="12" y="18" font-size="9.5" font-weight="600" fill="#0c4a6e">OPERATES ON MODULAR CODE CONTRACTS:</text>
+      <text x="12" y="32" font-size="9.5" font-weight="500" fill="#0369a1">Tactic Protocol • Private Typed Mem • Disjoint Robot Sets</text>
+    </g>
+  </g>
+
+  <!-- Arrow from Agent to Policy Execution -->
+  <line x1="452" y1="225" x2="512" y2="225" stroke="#0284c7" stroke-width="2.5" marker-end="url(#arrow-right-blue)"/>
+  <rect x="456" y="206" width="52" height="16" rx="3" fill="#e0f2fe"/>
+  <text x="482" y="218" text-anchor="middle" font-size="9" font-weight="700" fill="#0284c7">Policy π'</text>
+
+  <!-- RIGHT: STRATEGY POLICY EXECUTION -->
+  <g transform="translate(520, 172)">
+    <rect width="488" height="106" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="16" y="14" width="28" height="28" rx="4" fill="#0f172a"/>
+    <text x="30" y="32" text-anchor="middle" font-size="13" fill="#ffffff">⚡</text>
+
+    <text x="54" y="26" font-size="12" font-weight="700" fill="#0f172a">Strategy Execution &amp; Rollouts (Policy π)</text>
+    <text x="54" y="40" font-size="10" font-weight="600" fill="#475569">6v6 Headless Physical Simulation (rsim)</text>
+
+    <g transform="translate(16, 52)">
+      <rect width="456" height="42" rx="5" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="18" font-size="9.5" font-weight="600" fill="#334155">ACTIVE POLICIES EVALUATED:</text>
+      <text x="12" y="32" font-size="9.5" font-weight="500" fill="#64748b">Tactics (Pass, Mark, Clear) × Partitioner Orchestration</text>
+    </g>
+  </g>
+
+  <!-- Down Arrow from Execution to Observability -->
+  <line x1="764" y1="278" x2="764" y2="304" stroke="#64748b" stroke-width="2" marker-end="url(#arrow-down-slate)"/>
+
+  <!-- ==================== BOTTOM: RUNTIME OBSERVABILITY & CRITIC ==================== -->
+  <g transform="translate(32, 312)">
+    <rect width="976" height="160" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#card-shadow)"/>
+
+    <!-- Header bar -->
+    <rect x="16" y="12" width="944" height="26" rx="5" fill="#0f172a"/>
+    <text x="488" y="29" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.04em">RUNTIME OBSERVABILITY &amp; CRITIC LAYERS (FEEDING THE VALUE FUNCTION)</text>
+
+    <!-- Observability Box 1: MatchLog -->
+    <g transform="translate(16, 48)">
+      <rect width="224" height="96" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+      <rect x="10" y="10" width="80" height="18" rx="3" fill="#e2e8f0"/>
+      <text x="50" y="22" text-anchor="middle" font-size="8.5" font-weight="700" fill="#334155">MATCHLOG</text>
+      <text x="10" y="44" font-size="10.5" font-weight="700" fill="#0f172a">Dual JSONL Streams</text>
+      <text x="10" y="60" font-size="9.5" font-weight="500" fill="#64748b">• intention: slot changes</text>
+      <text x="10" y="74" font-size="9.5" font-weight="500" fill="#64748b">• trace(): 0-overhead per-tick</text>
+      <text x="10" y="88" font-size="9.5" font-weight="500" fill="#0369a1">Context-efficient telemetry</text>
+    </g>
+
+    <!-- Observability Box 2: Watchdog -->
+    <g transform="translate(254, 48)">
+      <rect width="228" height="96" rx="6" fill="#fffbeb" stroke="#fef3c7" stroke-width="1"/>
+      <rect x="10" y="10" width="104" height="18" rx="3" fill="#fde68a"/>
+      <text x="62" y="22" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">STALL WATCHDOG</text>
+      <text x="10" y="44" font-size="10.5" font-weight="700" fill="#92400e">In-Match Deadlocks</text>
+      <text x="10" y="60" font-size="9.5" font-weight="500" fill="#b45309">• RESTART_STALL (&gt;15s)</text>
+      <text x="10" y="74" font-size="9.5" font-weight="500" fill="#b45309">• COMMITTED_FROZEN</text>
+      <text x="10" y="88" font-size="9.5" font-weight="600" fill="#78350f">summary.json diagnostics</text>
+    </g>
+
+    <!-- Observability Box 3: Render Window & Replay -->
+    <g transform="translate(496, 48)">
+      <rect width="228" height="96" rx="6" fill="#f0fdf4" stroke="#dcfce7" stroke-width="1"/>
+      <rect x="10" y="10" width="112" height="18" rx="3" fill="#bbf7d0"/>
+      <text x="66" y="22" text-anchor="middle" font-size="8.5" font-weight="700" fill="#15803d">SPATIAL &amp; REPLAY</text>
+      <text x="10" y="44" font-size="10.5" font-weight="700" fill="#166534">Visual Trail Anchors</text>
+      <text x="10" y="60" font-size="9.5" font-weight="500" fill="#15803d">• render_around_event()</text>
+      <text x="10" y="74" font-size="9.5" font-weight="500" fill="#15803d">• repro_from_replay.py</text>
+      <text x="10" y="88" font-size="9.5" font-weight="600" fill="#14532d">15s deterministic slice</text>
+    </g>
+
+    <!-- Observability Box 4: Seed Pairing Evaluator -->
+    <g transform="translate(738, 48)">
+      <rect width="222" height="96" rx="6" fill="#f0f9ff" stroke="#e0f2fe" stroke-width="1"/>
+      <rect x="10" y="10" width="94" height="18" rx="3" fill="#bae6fd"/>
+      <text x="57" y="22" text-anchor="middle" font-size="8.5" font-weight="700" fill="#0369a1">SEED PAIRING</text>
+      <text x="10" y="44" font-size="10.5" font-weight="700" fill="#0c4a6e">Variance Canceller</text>
+      <text x="10" y="60" font-size="9.5" font-weight="500" fill="#0369a1">• Identical initial state</text>
+      <text x="10" y="74" font-size="9.5" font-weight="500" fill="#0369a1">• Identical noise seed_k</text>
+      <text x="10" y="88" font-size="9.5" font-weight="700" fill="#0284c7">Δ = Score_B - Score_A</text>
+    </g>
+  </g>
+
+  <!-- ==================== FEEDBACK ARROW: DIAGNOSTIC GRADIENT ==================== -->
+  <path d="M 128 312 L 128 284" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrow-up-amber)"/>
+  <rect x="42" y="286" width="172" height="18" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="128" y="299" text-anchor="middle" font-size="8.5" font-weight="700" fill="#b45309">DIAGNOSTIC GRADIENT FEEDBACK</text>
+
+  <!-- ==================== BOTTOM STATUS BAR: PROMOTION ==================== -->
+  <g transform="translate(32, 486)">
+    <rect width="976" height="74" rx="8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+    
+    <g transform="translate(20, 16)">
+      <text x="0" y="16" font-size="11.5" font-weight="700" fill="#ffffff">Tier 3: Tournament Promotion &amp; Deployment Gate</text>
+      <text x="0" y="34" font-size="10" font-weight="400" fill="#94a3b8">When Δ &gt; 0, zero stall events, and 0 referee infractions → Candidate merges &amp; updates team Elo</text>
+    </g>
+
+    <g transform="translate(810, 18)">
+      <rect width="146" height="38" rx="6" fill="#059669"/>
+      <text x="73" y="23" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff" letter-spacing="0.04em">DEPLOYED TO ELO</text>
+    </g>
+  </g>
+</svg>

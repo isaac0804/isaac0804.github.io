@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <filter id="card-shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="pill-shadow" x="-2%" y="-6%" width="104%" height="118%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow-right-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <!-- Background canvas -->
+  <rect width="980" height="560" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(32, 20)">
+    <rect width="916" height="42" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    <text x="20" y="26" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="0.04em">THE MULTI-AGENT EVALUATION MATRIX</text>
+    <text x="360" y="26" font-size="12" font-weight="500" fill="#64748b">|   Orthogonal Value Functions for Specialized Search Regimes</text>
+  </g>
+
+  <!-- ==================== QUADRANT 1: INVARIANT & CONTRACT GATE ==================== -->
+  <g transform="translate(32, 78)">
+    <rect width="446" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header pill -->
+    <rect x="16" y="14" width="180" height="24" rx="4" fill="#059669"/>
+    <text x="106" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">INVARIANT GATES</text>
+    
+    <rect x="344" y="14" width="86" height="24" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+    <text x="387" y="30" text-anchor="middle" font-size="9.5" font-weight="700" fill="#047857">&lt; 1.0s • Mock</text>
+
+    <!-- Content -->
+    <text x="16" y="60" font-size="12" font-weight="700" fill="#064e3b">Mathematical Soundness &amp; Action Masking</text>
+    <text x="16" y="78" font-size="11" font-weight="500" fill="#475569">Verifies pure code structure before simulation compute.</text>
+
+    <g transform="translate(16, 92)">
+      <rect width="414" height="48" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="20" font-size="10" font-weight="600" fill="#0f172a">CHECKED PROPERTIES:</text>
+      <text x="12" y="36" font-size="10" font-weight="500" fill="#059669">Disjoint Partitions • Commit Locks • Spatial Bisectors</text>
+    </g>
+
+    <g transform="translate(16, 150)">
+      <rect width="414" height="52" rx="6" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+      <text x="12" y="20" font-size="9.5" font-weight="700" fill="#047857">OPTIMAL REGIME:</text>
+      <text x="12" y="36" font-size="10" font-weight="500" fill="#065f46">Code synthesis &amp; refactoring gate. Prunes syntax/logic errors.</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 2: SEED-PAIRED SCENARIOS ==================== -->
+  <g transform="translate(502, 78)">
+    <rect width="446" height="220" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header pill -->
+    <rect x="16" y="14" width="210" height="24" rx="4" fill="#0284c7"/>
+    <text x="121" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">SEED-PAIRED SCENARIOS</text>
+    
+    <rect x="340" y="14" width="90" height="24" rx="4" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/>
+    <text x="385" y="30" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0369a1">10–30s • Micro</text>
+
+    <!-- Content -->
+    <text x="16" y="60" font-size="12" font-weight="700" fill="#0c4a6e">Local Value Optimization (MuZero-Style)</text>
+    <text x="16" y="78" font-size="11" font-weight="500" fill="#475569">5-second high-leverage micro-situations (2v1, loose balls).</text>
+
+    <g transform="translate(16, 92)">
+      <rect width="414" height="48" rx="6" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="12" y="20" font-size="10" font-weight="700" fill="#0284c7">VARIANCE CANCELLATION (SEED PAIRING):</text>
+      <text x="12" y="36" font-size="10" font-weight="600" fill="#0c4a6e">Δ = Score_B(seed_k) - Score_A(seed_k)  [Cov ≈ Var_env]</text>
+    </g>
+
+    <g transform="translate(16, 150)">
+      <rect width="414" height="52" rx="6" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1"/>
+      <text x="12" y="20" font-size="9.5" font-weight="700" fill="#0369a1">OPTIMAL REGIME:</text>
+      <text x="12" y="36" font-size="10" font-weight="500" fill="#0c4a6e">Fine-tuning geometric heuristics &amp; tactical execution speed.</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 3: ADVERSARIAL STRESS & FUZZING ==================== -->
+  <g transform="translate(32, 314)">
+    <rect width="446" height="220" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header pill -->
+    <rect x="16" y="14" width="220" height="24" rx="4" fill="#d97706"/>
+    <text x="126" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">RESTART FUZZING &amp; WATCHDOG</text>
+    
+    <rect x="340" y="14" width="90" height="24" rx="4" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
+    <text x="385" y="30" text-anchor="middle" font-size="9.5" font-weight="700" fill="#b45309">Stress • Edge</text>
+
+    <!-- Content -->
+    <text x="16" y="60" font-size="12" font-weight="700" fill="#78350f">State-Machine Robustness &amp; Deadlock Immunity</text>
+    <text x="16" y="78" font-size="11" font-weight="500" fill="#475569">Injects unpredictable referee interruptions at seeded times.</text>
+
+    <g transform="translate(16, 92)">
+      <rect width="414" height="48" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+      <text x="12" y="20" font-size="10" font-weight="700" fill="#b45309">DETECTED PATHOLOGIES:</text>
+      <text x="12" y="36" font-size="10" font-weight="600" fill="#78350f">RESTART_STALL (&gt;15s) • COMMITTED_FROZEN (ball &lt;5cm)</text>
+    </g>
+
+    <g transform="translate(16, 150)">
+      <rect width="414" height="52" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+      <text x="12" y="20" font-size="9.5" font-weight="700" fill="#b45309">OPTIMAL REGIME:</text>
+      <text x="12" y="36" font-size="10" font-weight="500" fill="#92400e">Surfacing subtle deadlock states and transition race conditions.</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 4: TOURNAMENT POPULATION LADDER ==================== -->
+  <g transform="translate(502, 314)">
+    <rect width="446" height="220" rx="10" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#card-shadow)"/>
+    
+    <!-- Header pill -->
+    <rect x="16" y="14" width="220" height="24" rx="4" fill="#9333ea"/>
+    <text x="126" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">POPULATION TOURNAMENT</text>
+    
+    <rect x="330" y="14" width="100" height="24" rx="4" fill="#f3e8ff" stroke="#d8b4fe" stroke-width="1"/>
+    <text x="380" y="30" text-anchor="middle" font-size="9.5" font-weight="700" fill="#7e22ce">Minutes • Macro</text>
+
+    <!-- Content -->
+    <text x="16" y="60" font-size="12" font-weight="700" fill="#3b0764">Game-Theoretic Meta Stability (AlphaStar League)</text>
+    <text x="16" y="78" font-size="11" font-weight="500" fill="#475569">Full 6v6 round-robin against catalog: tiki_taka, zone, counter.</text>
+
+    <g transform="translate(16, 92)">
+      <rect width="414" height="48" rx="6" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+      <text x="12" y="20" font-size="10" font-weight="700" fill="#7e22ce">EVALUATED ATTRIBUTES:</text>
+      <text x="12" y="36" font-size="10" font-weight="600" fill="#3b0764">Non-Transitive Cycles • Elo Drift • 600s Foul Accumulation</text>
+    </g>
+
+    <g transform="translate(16, 150)">
+      <rect width="414" height="52" rx="6" fill="#f3e8ff" stroke="#c084fc" stroke-width="1"/>
+      <text x="12" y="20" font-size="9.5" font-weight="700" fill="#7e22ce">OPTIMAL REGIME:</text>
+      <text x="12" y="36" font-size="10" font-weight="500" fill="#581c87">Macro game balance &amp; final strategy roster certification.</text>
+    </g>
+  </g>
+</svg>
