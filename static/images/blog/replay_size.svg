@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" role="img" aria-label="Replay size for one 120 s match">
+<rect width="960" height="330" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="32" y="38" font-size="15" font-weight="700" fill="#0f172a">Replay size for one 120 s match</text>
+<text x="32" y="58" font-size="12" fill="#64748b">Identical 7,200 frames encoded by each historical writer</text>
+<text x="32" y="105" font-size="13" fill="#0f172a" text-anchor="start" font-weight="400">Pickle per frame</text>
+<rect x="330" y="86" width="520.0" height="28" rx="3" fill="#94a3b8"/>
+<text x="860.0" y="105" font-size="13" fill="#0f172a" text-anchor="start" font-weight="400">23.69 MB</text>
+<text x="32" y="155" font-size="13" fill="#0f172a" text-anchor="start" font-weight="400">Columnar .npz</text>
+<rect x="330" y="136" width="141.1" height="28" rx="3" fill="#94a3b8"/>
+<text x="481.13972140143517" y="155" font-size="13" fill="#0f172a" text-anchor="start" font-weight="400">6.43 MB  (3.7x smaller)</text>
+<text x="32" y="205" font-size="13" fill="#0f172a" text-anchor="start" font-weight="400">+ referee sidecar stores changes only</text>
+<rect x="330" y="186" width="95.3" height="28" rx="3" fill="#94a3b8"/>
+<text x="435.2638243984803" y="205" font-size="13" fill="#0f172a" text-anchor="start" font-weight="400">4.34 MB  (5.5x smaller)</text>
+<text x="32" y="255" font-size="13" fill="#0f172a" text-anchor="start" font-weight="600">+ float32 state</text>
+<rect x="330" y="236" width="45.4" height="28" rx="3" fill="#0284c7"/>
+<text x="385.43689320388347" y="255" font-size="13" fill="#0f172a" text-anchor="start" font-weight="700">2.07 MB  (11.5x smaller)</text>
+<text x="32" y="312" font-size="11.5" fill="#64748b" text-anchor="start" font-weight="400">Worst position error from float32: 2.4e-7 m. Restart outcomes identical on 24 re-encoded round-robin matches.</text>
+</svg>
