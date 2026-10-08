@@ -183,7 +183,7 @@ Building an autonomous robot football stack requires careful separation of conce
 * **Enforce referee rules in-process** to keep test loops fast, self-contained, and deterministic.
 * **Separate strategic allocation from local robot execution**, modeling multi-robot play like an operating system scheduler.
 
-In my next post, I will tackle the next frontier: **Scaling Strategy Search and Building Evals**. In sparse-reward sports like robot football, how do you reliably evaluate whether a tactical change made your team better? I will dive into evaluator design, scenario harvesting, and how a deterministic software stack enables an **agentic coding workflow**—where autonomous AI agents benchmark, debug, and propose tactical improvements alongside human engineers.
+The next frontier is evaluation: in sparse-reward sports like robot football, how do you reliably tell whether a tactical change made your team better? I wrote up how a deterministic simulator, replay tooling and an evaluation loop make that checkable, and what it means for working with coding agents, in [Giving Coding Agents Something to Measure](/posts/2026-10-08-giving-coding-agents-something-to-measure/).
 
 ---
 

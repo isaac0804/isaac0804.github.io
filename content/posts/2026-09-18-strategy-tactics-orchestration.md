@@ -248,7 +248,7 @@ Separating multi-robot software into **Tactics** and **Orchestration** transform
 * **Orchestration is explicit**: The `Partitioner` makes global allocation decisions without mutating tactic state.
 * **Safety is guaranteed by construction**: The single-writer partition, `is_committed()` locks, and universal barrier resets make concurrent multi-robot execution mathematically robust.
 
-In my next and final post of this series, I will examine the biggest open frontier: **Scaling Strategy Search and Building Evaluators**. Once your software stack is modular and deterministic, how do you measure whether a tactical change actually improved team performance? And how can autonomous AI coding agents leverage this evaluation harness to search, benchmark, and improve strategies automatically?
+The open question after this is how to measure whether a tactical change actually improved team performance, and how coding agents can use that evaluation harness to test and improve strategies. I wrote that up in [Giving Coding Agents Something to Measure](/posts/2026-10-08-giving-coding-agents-something-to-measure/).
 
 ---
 
