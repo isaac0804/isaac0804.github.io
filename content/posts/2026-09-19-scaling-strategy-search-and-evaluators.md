@@ -1,7 +1,7 @@
 ---
 title: "Scaling Strategy Search, Evaluators, and the Agentic Coding Workflow"
 date: 2026-09-19T00:00:00Z
-draft: true
+draft: false
 tags: ["Robotics", "RoboCup", "AI Agents", "Evaluation", "Software Engineering"]
 summary: "Our bet on scaling robot sports: why we believe coding agents can search strategy space better than human developers, and the infrastructure, debugging tools, and evaluation benches we built to let them hill-climb."
 cover:
@@ -37,7 +37,7 @@ In this workflow, the **AI Coding Agent** acts as the search operator over the s
 For an AI coding agent to effectively search a strategy codebase, it cannot operate in an unstructured environment. Every piece of infrastructure we built exists to make this search process more reliable and efficient.
 
 ### Strategy and Tactic Contracts: Isolating the Search Space
-In our second post, I broke down why we refactored our stack into **Tactics × Orchestration**. A major reason was to make the search space tractable:
+In [Strategy = Tactics × Orchestration](/posts/2026-09-18-strategy-tactics-orchestration/), I broke down why we refactored our stack into **Tactics × Orchestration**. A major reason was to make the search space tractable:
 * **Disjoint robot allocations**: A pure mathematical Partitioner assigns robots to tactics so that no two tactics ever control the same robot. An agent can mutate an attacking tactic without accidentally issuing conflicting commands to defensive robots.
 * **Private typed state**: Every tactic owns an isolated `mem` dataclass. Tactics cannot read or write to global shared blackboards, preventing changes in one file from causing silent side effects in another.
 * **Protocol enforcement**: Every tactic implements a clean `tick(ctx, robots, mem) -> (commands, mem)` interface.
@@ -47,7 +47,7 @@ Without these contracts, an agent modifying a striker heuristic would routinely 
 ### Durable Context (`AGENTS.md`): Anchoring Search
 Autonomous agents lack long-term memory across sessions. If an agent has to re-learn repo structure, testing conventions, and past architectural pitfalls on every turn, search efficiency collapses.
 
-We maintain an authoritative [`AGENTS.md`](file:///home/isaac/dev/ssl/Utama-Core/AGENTS.md) at the repository root. It provides durable context: architectural boundaries, strict constraints (such as always passing `--headless` to tests, and never hand-writing multi-robot allocations), and historical lessons from past tactic deadlocks. This anchors the agent's search within realistic bounds from the very first prompt.
+We maintain an authoritative [`AGENTS.md`](https://github.com/First-Order-RoboCup-SSL/Utama-Core/blob/main/AGENTS.md) at the repository root. It provides durable context: architectural boundaries, strict constraints (such as always passing `--headless` to tests, and never hand-writing multi-robot allocations), and historical lessons from past tactic deadlocks. This anchors the agent's search within realistic bounds from the very first prompt.
 
 ### Runtime Telemetry: Providing Search Direction
 A search algorithm cannot hill-climb if its only feedback is a single scalar loss or an opaque 0–1 match scoreline after 10 minutes. The agent needs actionable diagnostic feedback to understand *why* a policy failed so it can propose an informed fix.
@@ -77,10 +77,10 @@ Instead, we built three evaluation benches that provide interpretable, causal si
 * **Role in search**: Fast, deterministic pass/fail filter. If an agent introduces a syntax error, type mismatch, or invariant violation, it gets an immediate stack trace to self-correct within seconds.
 
 ### 2. Scenario Bench (Wide Scenario Coverage)
-* **What it is**: Isolated, 5-second dynamic simulation runs across a broad library of predefined match situations.
-* **Execution speed**: 10 to 30 seconds.
+* **What it is**: Isolated, 20-second dynamic simulation runs from a broad library of starting situations.
+* **Execution speed**: about 10 seconds of wall-clock time per start.
 * **Purpose**: Provides broad scenario coverage to spot tactical errors quickly across varied game situations, without the overhead of playing full matches.
-* **Scenario coverage**: 2v1 counter-breakaways, defensive walls against corner kicks, contested loose-ball scrums in midfield, and goal-line scrambles.
+* **Scenario coverage**: kickoffs, free kicks, penalties and open-play moments harvested from round-robin replays, plus a few hand-authored anchors.
 * **Seed Pairing for Noise-Free Comparison**:
   Physical simulation introduces random noise (wheel slip, collision micro-bounces, vision latency). If Candidate Strategy B runs on Seed 42 and Baseline Strategy A runs on Seed 99, Strategy B might win purely because of favorable physics noise.
   
@@ -93,7 +93,7 @@ Instead, we built three evaluation benches that provide interpretable, causal si
 ### 3. Tournament (Head-to-Head Matches)
 * **What it is**: Full 6v6 round-robin matches run headlessly against our catalog of established strategies (`tiki_taka`, `zone_flow`, `counter_flow`, `score_aware_zone_flow`).
 * **Execution speed**: Minutes to hours.
-* **Purpose**: Tests emergent 6v6 team coordination, referee foul accumulation, and overall competitiveness over a full 600-second match.
+* **Purpose**: Tests emergent 6v6 team coordination, referee foul accumulation, and overall competitiveness over a full match.
 * **Role in search**: While this is the most realistic evaluation, it provides less immediate, granular signal for rapid iterative development. A 1–0 scoreline after 10 minutes does not tell an agent which specific passing decision or defensive rotation made the difference. It serves as the final validation gate before merging a strategy into the active roster.
 
 ---
@@ -120,4 +120,4 @@ If you are an Imperial student excited about building autonomous systems that co
 
 ---
 
-*Thank you for following this 3-part series on building the First Order Robotics software stack. Check out the previous posts on [our system architecture](/posts/2026-09-17-leading-software-for-a-robot-football-team/) and [Tactics × Orchestration](/posts/2026-09-18-strategy-tactics-orchestration/).*
+*Related posts: [our system architecture](/posts/2026-09-17-leading-software-for-a-robot-football-team/), [Tactics × Orchestration](/posts/2026-09-18-strategy-tactics-orchestration/), and [Giving Coding Agents Something to Measure](/posts/2026-10-08-giving-coding-agents-something-to-measure/), which has measured results for the tooling described here.*
