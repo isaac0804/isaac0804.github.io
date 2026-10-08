@@ -56,4 +56,15 @@ Solve the exploitation vs exploration dilemma.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Cons:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only can learn in an environment with relatively small action space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Combination of policy evaluation and policy improvement (both can be called policy iteration)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2104.06303.pdf"&gt;https://arxiv.org/pdf/2104.06303.pdf&lt;/a&gt; Brilliant summary of muzero in this paper&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

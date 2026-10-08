@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" role="img" aria-label="FastPathPlanner time per call">
+<rect width="960" height="440" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="32" y="38" font-size="15" font-weight="700" fill="#0f172a">FastPathPlanner time per call</text>
+<text x="32" y="58" font-size="12" fill="#64748b">Same 20 s match at each commit, median of 5 runs, log scale</text>
+<line x1="90" y1="340.0" x2="928" y2="340.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="82" y="344.0" font-size="11" fill="#64748b" text-anchor="end" font-weight="400">0.05 ms</text>
+<line x1="90" y1="298.0" x2="928" y2="298.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="82" y="302.0151357155022" font-size="11" fill="#64748b" text-anchor="end" font-weight="400">0.1 ms</text>
+<line x1="90" y1="256.0" x2="928" y2="256.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="82" y="260.0302714310044" font-size="11" fill="#64748b" text-anchor="end" font-weight="400">0.2 ms</text>
+<line x1="90" y1="200.5" x2="928" y2="200.5" stroke="#e2e8f0" stroke-width="1"/>
+<text x="82" y="204.52929977329376" font-size="11" fill="#64748b" text-anchor="end" font-weight="400">0.5 ms</text>
+<line x1="90" y1="158.5" x2="928" y2="158.5" stroke="#e2e8f0" stroke-width="1"/>
+<text x="82" y="162.54443548879598" font-size="11" fill="#64748b" text-anchor="end" font-weight="400">1 ms</text>
+<line x1="90" y1="116.6" x2="928" y2="116.6" stroke="#e2e8f0" stroke-width="1"/>
+<text x="82" y="120.55957120429818" font-size="11" fill="#64748b" text-anchor="end" font-weight="400">2 ms</text>
+<rect x="117.8" y="125.2" width="84" height="214.8" rx="3" fill="#94a3b8"/>
+<text x="159.83333333333331" y="117.20409107997435" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700">1.734 ms</text>
+<text x="159.83333333333331" y="360" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="600">3bcef0c</text>
+<text x="159.83333333333331" y="377" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400">Aug 16, before</text>
+<rect x="257.5" y="232.5" width="84" height="107.5" rx="3" fill="#94a3b8"/>
+<text x="299.5" y="224.48873016510504" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700">0.295 ms</text>
+<text x="299.5" y="360" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="600">4493002</text>
+<text x="299.5" y="377" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400">Aug 16, same day</text>
+<rect x="397.2" y="233.1" width="84" height="106.9" rx="3" fill="#94a3b8"/>
+<text x="439.16666666666663" y="225.1078635504901" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700">0.292 ms</text>
+<text x="439.16666666666663" y="360" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="600">bbcff62</text>
+<text x="439.16666666666663" y="377" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400">Sep 28</text>
+<rect x="536.8" y="239.2" width="84" height="100.8" rx="3" fill="#94a3b8"/>
+<text x="578.8333333333333" y="231.21374081663782" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700">0.264 ms</text>
+<text x="578.8333333333333" y="360" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="600">61be582</text>
+<text x="578.8333333333333" y="377" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400">Sep 29</text>
+<rect x="676.5" y="304.4" width="84" height="35.6" rx="3" fill="#0284c7"/>
+<text x="718.5" y="296.3969649646165" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700">0.090 ms</text>
+<text x="718.5" y="360" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="600">8c191ee</text>
+<text x="718.5" y="377" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400">Sep 29, numba kernels</text>
+<rect x="816.2" y="293.4" width="84" height="46.6" rx="3" fill="#0284c7"/>
+<text x="858.1666666666666" y="285.3535011335311" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700">0.108 ms</text>
+<text x="858.1666666666666" y="360" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="600">1697908</text>
+<text x="858.1666666666666" y="377" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400">v2.0.3</text>
+<line x1="90" y1="340" x2="928" y2="340" stroke="#64748b" stroke-width="1.2"/>
+<line x1="648.7" y1="239.2" x2="648.7" y2="304.4" stroke="#64748b" stroke-width="1.2"/><line x1="643.7" y1="239.2" x2="653.7" y2="239.2" stroke="#64748b" stroke-width="1.2"/><line x1="643.7" y1="304.4" x2="653.7" y2="304.4" stroke="#64748b" stroke-width="1.2"/>
+<text x="658.6666666666666" y="275.80535289062715" font-size="12" fill="#0f172a" text-anchor="start" font-weight="700">3x</text>
+<text x="32" y="424" font-size="11.5" fill="#64748b" text-anchor="start" font-weight="400">16x overall (1.734 to 0.108 ms). The last bar is slightly higher because later planner and tactic changes add some work back.</text>
+</svg>
